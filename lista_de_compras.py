@@ -1,5 +1,3 @@
-from os import system
-
 ERROR_MESSAGE = "Opção inválida. tente novamente."
 
 
@@ -62,9 +60,9 @@ def remove_item():
 
 def main():
     while True:
-        system("cls")
+        print("\n" * 100)
         user_option = get_option()
-        system("cls")
+        print("\n" * 100)
         if user_option == 1:
             add_item()
         elif user_option == 2:
