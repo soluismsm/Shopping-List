@@ -10,16 +10,8 @@ def get_option():
     while True:
         try:
             choice = int(input("Escolha (1|2|3|4): "))
-            if choice == 1:
-                return 1
-            elif choice == 2:
-                return 2
-            elif choice == 3:
-                return 3
-            elif choice == 4:
-                return 4
-            else:
-                raise ValueError(ERROR_MESSAGE)
+            if choice in [1, 2, 3, 4]:
+                return choice
         except ValueError:
             print(ERROR_MESSAGE)
 
